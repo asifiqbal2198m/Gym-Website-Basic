@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wani's golden gym</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: opx;
+            padding: 0px;
+            background: url("bg.jpg");
+            font-family: 'Baloo Bhai', cursive;
+
+            color: white;
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid rgb(232, 194, 123); */
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+
+        .left img {
+            width: 80px;
+            filter: invert(100%);
+        }
+
+        .mid {
+            /* border: 2px solid rgb(232, 194, 123); */
+            display: block;
+            width: 60%;
+            margin: 20px auto;
+            border-radius: 10px;
+
+        }
+
+        .right {
+            display: inline-block;
+
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            border-radius: 10px;
+        }
+
+        .navbar {
+
+            display: inline-block;
+            color: white;
+        }
+
+        .navbar li {
+            display: inline-block;
+            color: white;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            font-size: 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(232, 194, 123);
+
+        }
+
+        .btn {
+            margin: 0px 2px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid rgb(232, 194, 123);
+            border-radius: 10px;
+            font-size: 13px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            color: rgb(232, 194, 123);
+            background-color: grey;
+        }
+
+        .container {
+            border: 2px solid rgb(231, 231, 230);
+            margin: 68px 45px;
+            padding: 56px;
+            border-radius: 18px;
+            width: 31%;
+            color: rgb(233, 233, 13);
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 360px;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 4px auto;
+            font-size: 21px;
+            font-family: 'Baloo Bhai', cursive;
+            background-color: rgb(196, 196, 180);
+
+
+        }
+
+        div.container {
+            text-align: center;
+        }
+
+        .container .btn {
+            text-align: center;
+            display: block;
+            width: 360px;
+            padding: 4px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 4px auto;
+            font-size: 21px;
+            color: black;
+            font-family: 'Baloo Bhai', cursive;
+            background-color: rgb(179, 179, 13);
+
+        }
+
+        .container .btn:hover {
+            background-color: brown;
+
+        }
+    </style>
+    <link rel="stylesheet" href="gym.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Gym-Silhoutte-Transparent-PNG.png" alt="">
+            
+            <div>gain fitness</div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness gain</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <!-- right box for buttons -->
+            <div class="right">
+                <button class="btn">call us</button>
+                <button class="btn">email us</button>
+            </div>
+    </header>
+    <div class="container">
+        <h1>Welcome to our gym</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+
+                <input type="text" placeholder="enter your name"><br>
+                <input type="number" placeholder="enter your age"><br>
+                <input type="text" placeholder="enter your gender"><br>
+                <input type="text" placeholder="enter your locality"><br>
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
